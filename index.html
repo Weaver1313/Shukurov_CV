@@ -3,72 +3,92 @@
     <head>
         <meta charset="UTF-8">
         <title>Shukurov CV</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <table cellspacing="15">
-        <tr>
-          <td><img src="i.webp" width="200" alt="Проблемы с возпроизведением картинки"></td>
-          <td>
+      <div class="conteniar">
+        <div class="info">
+          <img id="avatar" class="avatar" src="i.webp" alt="Проблемы с возпроизведением картинки">
+          <div class="info-text">
             <h1>Шукуров Исмаил</h1>
-            <p>Я работал на должности <em><strong>QA Engineer</strong></em> более 2-х лет</p>
+            <p>Я работал на должности <strong>QA Engineer</strong> более 2-х лет</p>
             <p>Я люблю заниматься спортам</p>
-            <p>Я люблю путишествовать</p></td>
-        </tr>
-      </table>
-      <hr>
-      <h2>Мои социальные сети</h2>
-      <ul type="disc">
-        <li><a target="_blank" href="https://vk.com/13veter13">VK</a></li>
-        <li><a target="_blank" href="https://t.me/ismail_1313">Telegram</a></li>
-      </ul>
-      <hr>
-      <h2>Мои хобби</h2>
-      <ol>
-        <li>Путишествие на природу</li>
-        <li>Спорт</li>
-        <li>Видео игры</li>
-      </ol>
-      <hr>
-      <h2>Опыт работы</h2>
-      <table border="1">
-        <tr>
-          <th>Компания</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-        <tr>
-          <td>Centicore</td>
-          <td>QA Engineer</td>
-          <td>2024-2025</td>
-        </tr>
-        <tr>
-          <td>Omoda</td>
-          <td>QA Engineer</td>
-          <td>2023-2024</td>
-        </tr>
-        <tr>
-          <td>Игнисс</td>
-          <td>Manager</td>
-          <td>2022-2023</td>
-        </tr>
-      </table>
-      
-      <hr>
-      <h2>YouTube курсы</h2>
-      <a href="youtube.html">Посмотреть списк</a>
-      <hr>
-      <form action="/2024/Попытка_2/index.html">
-        <label for="Name">Ваше имя</label>
-        <input type="text" id="Name" placeholder="Введите ваше имя">
-        <br>
-        <label for="mail">Ваш mail</label>
-        <input type="text" id="mail" placeholder="Введите ваше mail">
-        <br>
-        <label for="description">Ваше сообщение</label>
-        <textarea id="description" placeholder="Введите ваше сообщение"></textarea>
-        <br>
-        <input type="submit" value="Связаться">
-        
-      </form>
+            <p>Я люблю путишествовать</p>
+            <h4>Мои социальные сети</h4>
+              <a class="url" target="_blank" href="https://vk.com/13veter13">VK</a>
+              |
+              <a class="url" target="_blank" href="https://t.me/ismail_1313">Telegram</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+          <h2>Мои хобби</h2>
+          <ol class="list">
+            <li>Путишествие на природу</li>
+            <li>Спорт</li>
+            <li>Видео игры</li>
+          </ol>
+        </div>
+        <div class="card bg-green">
+          <h2>Опыт работы</h2>
+          <table border="1" class="table">
+            <tr>
+              <th>Компания</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+            <tr class="temp">
+              <td><a class="centicore" target="_blank" href="https://centicore.ru/">Centicore</a></td>
+              <td>QA Engineer</td>
+              <td>2024 - 2025</td>
+            </tr>
+            <tr class="temp">
+              <td>Omoda</td>
+              <td>QA Engineer</td>
+              <td>2023 - 2024</td>
+            </tr>
+            <tr>
+              <td>Игнисс</td>
+              <td>Manager</td>
+              <td>2022 - 2023</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card bg-red">
+          <h2>YouTube курсы</h2>
+          <ul class="link-list">
+            <li>
+              <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU">HTML для Начинающих – Практический Курс</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=zZBiln_2FhM" target="_blank">Git и GitHub Курс Для Новичков</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+        <h2>Связаться со мной</h2>
+          <form action="/2024/Попытка_2/index.html">
+            <div class="row">
+              <div class="form-group">
+                <label for="Name">Ваше имя</label>
+                <input type="text" id="Name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="mail">Ваш mail</label>
+                <input type="text" id="mail" placeholder="Введите ваше mail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description">Ваше сообщение</label>
+              <textarea id="description" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+          </div>
+            <input class="btn" type="submit" value="Связаться">
+          </form>
+          <div class="position">
+          <div class="box"></div>
+        </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 500px;"></div>
     </body>
 </html>
