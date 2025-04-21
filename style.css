@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+15&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100..900&family=Noto+Sans:ital,wght@0,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(fon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-side {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.begin {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  color: #000; 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.myphoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px; 
+  margin-bottom: 30px;
+}
+
+.myphoto img {
+  max-width: 310px; 
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.skills ul, .contacts ul {
+  list-style-type: none; 
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.skills li {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px; 
+  margin-bottom: 10px; 
+}
+
+.skills li img {
+  width: 30px; 
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contacts li img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contacts img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.left-side .about, .left-side {
+  margin-bottom: 50px; 
+}
+
+.right-side .myphoto, .right-side, .right-side .skills, .right-side .contacts {
+  margin-bottom: 30px; 
+}
+
+.right-side .education {
+  margin-bottom: 50px; 
+}
+
+.left-side .experience {
+  margin-top: 50px; 
+}
+
+.left-side .achievements {
+  margin-top: 50px; 
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side, .right-side {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
